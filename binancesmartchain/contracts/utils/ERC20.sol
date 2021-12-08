@@ -37,8 +37,8 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
 
     uint256 private _totalSupply;
 
-    string private _name;
-    string private _symbol;
+    bytes16 private _name;
+    bytes4 private _symbol;
 
     /**
      * @dev Sets the values for {name} and {symbol}.
@@ -49,7 +49,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
      * All two of these values are immutable: they can only be set once during
      * construction.
      */
-    constructor(string memory name_, string memory symbol_) {
+    constructor(bytes16 name_, bytes4 symbol_) {
         _name = name_;
         _symbol = symbol_;
     }
@@ -58,7 +58,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
      * @dev Returns the name of the token.
      */
     function name() public view virtual override returns (string memory) {
-        return _name;
+        return string(abi.encodePacked(_name));
     }
 
     /**
@@ -66,7 +66,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
      * name.
      */
     function symbol() public view virtual override returns (string memory) {
-        return _symbol;
+        return string(abi.encodePacked(_symbol));
     }
 
     /**
