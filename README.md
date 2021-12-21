@@ -33,7 +33,7 @@ TxID: 4e09800b327d870a0000000000b55b8ecec5be0bbd289000000009959f04001a
 - Wait for confirmation from one of the mods?  
 - Receive promised signed message?  
   
-**Minimum amount of wrapping is 1million BKC**  
+**Minimum amount of wrapping is 1k BKC**  
 
 
 
