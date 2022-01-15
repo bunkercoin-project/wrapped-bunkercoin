@@ -3,7 +3,7 @@ wBKC - Wrapped Bunkercoin on smartchains
 ---
 ## Roles:
 
-BKC Vault address : B  
+BKC Vault address : BEuyxRBirfRSohgJvwePDVteBdcmtJzTd6   
 wBKC contract address(on matic) : 0x5BCda6E59262A96a599Ea938c9B679714c105Bba  
 wBKC contract address(on BSC) : 0x  
 
